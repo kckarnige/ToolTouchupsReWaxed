@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "tooltouchupsrewaxed",
+  "version": "${version}",
+  "name": "Tool Touch-Ups: ReWaxed",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MPL-2.0",
+  "icon": "assets/tooltouchupsrewaxed/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.kckarnige.tooltouchupsrewaxed.client.datagen.DataGenerator"
+    ],
+    "main": [
+      "com.kckarnige.tooltouchupsrewaxed.Tooltouchupsrewaxed"
+    ]
+  },
+  "mixins": [
+    "tooltouchupsrewaxed.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
