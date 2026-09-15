@@ -8,6 +8,7 @@ import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.DyeColor;
@@ -25,9 +26,44 @@ public class recipes extends FabricRecipeProvider {
             @Override
             public void generate() {
                 createShapeless(RecipeCategory.MISC, ItemRegister.DIAMOND_INGOT)
-                        .input(Items.IRON_INGOT, 4)
+                        .input(Items.GOLD_INGOT, 4)
                         .input(Items.DIAMOND, 4)
                         .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, Items.CHAINMAIL_HELMET)
+                        .pattern("-#-")
+                        .pattern("# #")
+                        .input('#', Items.IRON_CHAIN)
+                        .input('-', Items.IRON_NUGGET)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_CHAIN))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, Items.CHAINMAIL_CHESTPLATE)
+                        .pattern("# #")
+                        .pattern("#-#")
+                        .pattern("-#-")
+                        .input('#', Items.IRON_CHAIN)
+                        .input('-', Items.IRON_NUGGET)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_CHAIN))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, Items.CHAINMAIL_LEGGINGS)
+                        .pattern("#-#")
+                        .pattern("# #")
+                        .pattern("- -")
+                        .input('#', Items.IRON_CHAIN)
+                        .input('-', Items.IRON_NUGGET)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_CHAIN))
+                        .offerTo(exporter);
+
+
+                createShaped(RecipeCategory.COMBAT, Items.CHAINMAIL_BOOTS)
+                        .pattern("# #")
+                        .pattern("- -")
+                        .input('#', Items.IRON_CHAIN)
+                        .input('-', Items.IRON_NUGGET)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_CHAIN))
                         .offerTo(exporter);
             }
         };
