@@ -8,8 +8,10 @@ import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTables;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.function.SetEnchantmentsLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKeys;
 
@@ -23,15 +25,48 @@ public class LootTableModifier {
             if (!source.isBuiltin()) {
                 return;
             }
-
-            // All four Bastion chest loot tables
+            if (
+                    key.equals(LootTables.VILLAGE_ARMORER_CHEST) ||
+                            key.equals(LootTables.VILLAGE_WEAPONSMITH_CHEST) ||
+                            key.equals(LootTables.VILLAGE_TOOLSMITH_CHEST) ||
+                            key.equals(LootTables.SIMPLE_DUNGEON_CHEST) ||
+                            key.equals(LootTables.TRIAL_CHAMBERS_CORRIDOR_POT) ||
+                            key.equals(LootTables.TRIAL_CHAMBERS_CORRIDOR_CHEST) ||
+                            key.equals(LootTables.DESERT_PYRAMID_CHEST) ||
+                            key.equals(LootTables.UNDERWATER_RUIN_BIG_CHEST) ||
+                            key.equals(LootTables.UNDERWATER_RUIN_SMALL_CHEST) ||
+                            key.equals(LootTables.BASTION_TREASURE_CHEST) ||
+                            key.equals(LootTables.BASTION_BRIDGE_CHEST) ||
+                            key.equals(LootTables.BASTION_HOGLIN_STABLE_CHEST) ||
+                            key.equals(LootTables.BASTION_OTHER_CHEST) ||
+                            key.equals(LootTables.RUINED_PORTAL_CHEST) ||
+                            key.equals(LootTables.NETHER_BRIDGE_CHEST)
+            ) {
+                LootPool.Builder pool = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(
+                                RandomChanceLootCondition.builder(
+                                        ConstantLootNumberProvider.create(0.25f)
+                                )
+                        )
+                        .with(
+                                ItemEntry.builder(ItemRegister.PLATE_FORGER)
+                                        .apply(
+                                                SetCountLootFunction.builder(
+                                                        UniformLootNumberProvider.create(1, 6)
+                                                )
+                                        )
+                        );
+                tableBuilder.pool(pool);
+            }
             if (
                     key.equals(LootTables.BASTION_TREASURE_CHEST) ||
                             key.equals(LootTables.BASTION_BRIDGE_CHEST) ||
                             key.equals(LootTables.BASTION_HOGLIN_STABLE_CHEST) ||
-                            key.equals(LootTables.BASTION_OTHER_CHEST)
+                            key.equals(LootTables.BASTION_OTHER_CHEST) ||
+                            key.equals(LootTables.RUINED_PORTAL_CHEST) ||
+                            key.equals(LootTables.NETHER_BRIDGE_CHEST)
             ) {
-
                 RegistryEntryLookup<Enchantment> enchantments =
                         registries.getOrThrow(RegistryKeys.ENCHANTMENT);
 
@@ -39,28 +74,28 @@ public class LootTableModifier {
                         enchantments.getOrThrow(SWIFT_STRIKE);
 
                 LootPool.Builder pool = LootPool.builder()
-
-                        // Try once per chest
                         .rolls(ConstantLootNumberProvider.create(1))
-
-                        // 10% chance
                         .conditionally(
                                 RandomChanceLootCondition.builder(
-                                        ConstantLootNumberProvider.create(0.10f)
+                                        ConstantLootNumberProvider.create(0.15f)
                                 )
                         )
-
-                        // Golden Sword
+                        .with(
+                                ItemEntry.builder(Items.ENCHANTED_BOOK)
+                                        .apply(new SetEnchantmentsLootFunction.Builder()
+                                                .enchantment(
+                                                        swiftStrike,
+                                                        ConstantLootNumberProvider.create(2)
+                                                )
+                                        )
+                        )
                         .with(
                                 ItemEntry.builder(Items.GOLDEN_SWORD)
-
-                                        // Swift Strike I
-                                        .apply(
-                                                new SetEnchantmentsLootFunction.Builder()
-                                                        .enchantment(
-                                                                swiftStrike,
-                                                                ConstantLootNumberProvider.create(2)
-                                                        )
+                                        .apply(new SetEnchantmentsLootFunction.Builder()
+                                                .enchantment(
+                                                        swiftStrike,
+                                                        ConstantLootNumberProvider.create(2)
+                                                )
                                         )
                         );
 

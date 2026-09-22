@@ -16,6 +16,7 @@ public class models extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ItemRegister.DIAMOND_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ItemRegister.PLATE_FORGER, Models.GENERATED);
     }
 
     @Override

@@ -1,4 +1,6 @@
 {
     "item.tooltouchupsrewaxed.diamond_ingot": "Diamond Ingot",
+    "item.tooltouchupsrewaxed.plate_forger": "Plate Forger",
+    "item.tooltouchupsrewaxed.descriptor.ingots": "Ingots",
     "enchantment.tooltouchupsrewaxed.swift_strike": "Swift Strike"
 }
