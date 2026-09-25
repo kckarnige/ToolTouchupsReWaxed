@@ -3,9 +3,21 @@
   "id": "tooltouchupsrewaxed",
   "version": "${version}",
   "name": "Tool Touch-Ups: ReWaxed",
-  "description": "",
-  "authors": [],
-  "contact": {},
+  "description": "A reimagining of a mod made right before copper tools were added, meant to overhaul vanilla tool progression in a vanilla way.",
+  "authors": ["KiCKinTheBucket"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/tooltouchups-rewaxed",
+    "sources": "https://github.com/kckarnige/tooltouchupsrewaxed",
+    "issues": "https://github.com/kckarnige/tooltouchupsrewaxed/issues"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/tooltouchups-rewaxed",
+        "modmenu.kofi": "https://ko-fi.com/kckarnige"
+      }
+    }
+  },
   "license": "MPL-2.0",
   "icon": "assets/tooltouchupsrewaxed/icon.png",
   "environment": "*",
