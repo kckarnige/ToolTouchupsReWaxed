@@ -135,7 +135,7 @@ public class recipes extends FabricRecipeProvider {
                         .criterion("has_diamond", conditionsFromItem(Items.DIAMOND))
                         .offerTo(exporter);
 
-                createShapeless(RecipeCategory.MISC, ItemRegister.DIAMOND_INGOT, 2)
+                createShapeless(RecipeCategory.MISC, Items.DIAMOND, 7)
                         .input(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, 1)
                         .criterion("has_netherite_template", conditionsFromItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
                         .offerTo(exporter, "no_more_upgrade_template");
