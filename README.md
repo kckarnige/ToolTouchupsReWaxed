@@ -2,7 +2,7 @@
 
 ----
 
-[![CurseForge](https://img.shields.io/curseforge/dt/1295706?style=flat-square&logo=CurseForge&logoColor=f16436&label=CurseForge&labelColor=1a1a1a&color=f16436)](https://www.curseforge.com/projects/1295706) [![Modrinth Downloads](https://img.shields.io/modrinth/dt/kypWYwUz?style=flat-square&logo=modrinth&logoColor=1bd96a&label=Modrinth&labelColor=16181c&color=1bd96a)](https://modrinth.com/mod/kypWYwUz)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/kypWYwUz?style=flat-square&logo=modrinth&logoColor=1bd96a&label=Modrinth&labelColor=16181c&color=1bd96a)](https://modrinth.com/mod/kypWYwUz)
 
 [![modrinth-gallery](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/modrinth-gallery_64h.png)](https://modrinth.com/mod/tooltouchups-rewaxed/gallery) [![kofi-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/kofi-singular_64h.png)](https://ko-fi.com/kckarnige) [![buymeacoffee-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/buymeacoffee-singular_64h.png)](https://www.buymeacoffee.com/kckarnige)
 
