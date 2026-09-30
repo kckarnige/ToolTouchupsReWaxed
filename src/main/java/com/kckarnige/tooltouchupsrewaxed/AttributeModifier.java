@@ -21,50 +21,217 @@ public class AttributeModifier {
             addAttribute(
                     context,
                     Items.NETHERITE_HELMET,
-                    AttributeModifierSlot.ARMOR,
+                    AttributeModifierSlot.HEAD,
                     EntityAttributes.MOVEMENT_SPEED,
-                    "netherite_movement_speed_helmet",
+                    Identifier.of(MOD_ID, "armor_movement_speed_helmet"),
                     -0.05,
                     EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
             );
             addAttribute(
                     context,
                     Items.NETHERITE_CHESTPLATE,
-                    AttributeModifierSlot.ARMOR,
+                    AttributeModifierSlot.CHEST,
                     EntityAttributes.MOVEMENT_SPEED,
-                    "netherite_movement_speed_chestplate",
+                    Identifier.of(MOD_ID, "armor_movement_speed_chestplate"),
                     -0.05,
                     EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
             );
             addAttribute(
                     context,
                     Items.NETHERITE_LEGGINGS,
-                    AttributeModifierSlot.ARMOR,
+                    AttributeModifierSlot.LEGS,
                     EntityAttributes.MOVEMENT_SPEED,
-                    "netherite_movement_speed_leggings",
+                    Identifier.of(MOD_ID, "armor_movement_speed_leggings"),
                     -0.05,
                     EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
             );
             addAttribute(
                     context,
                     Items.NETHERITE_BOOTS,
-                    AttributeModifierSlot.ARMOR,
+                    AttributeModifierSlot.FEET,
                     EntityAttributes.MOVEMENT_SPEED,
-                    "netherite_movement_speed_boots",
+                    Identifier.of(MOD_ID, "armor_movement_speed_boots"),
                     -0.05,
                     EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
             );
 
+            addAttribute(
+                    context,
+                    Items.DIAMOND_HELMET,
+                    AttributeModifierSlot.HEAD,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_helmet"),
+                    -0.025,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.DIAMOND_CHESTPLATE,
+                    AttributeModifierSlot.CHEST,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_chestplate"),
+                    -0.025,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.DIAMOND_LEGGINGS,
+                    AttributeModifierSlot.LEGS,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_leggings"),
+                    -0.025,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.DIAMOND_BOOTS,
+                    AttributeModifierSlot.FEET,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_boots"),
+                    -0.025,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
 
+            addAttribute(
+                    context,
+                    Items.GOLDEN_HELMET,
+                    AttributeModifierSlot.HEAD,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_helmet"),
+                    0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.GOLDEN_CHESTPLATE,
+                    AttributeModifierSlot.CHEST,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_chestplate"),
+                    0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.GOLDEN_LEGGINGS,
+                    AttributeModifierSlot.LEGS,
+                    EntityAttributes.ARMOR,
+                    Identifier.ofVanilla("armor.leggings"),
+                    4,
+                    EntityAttributeModifier.Operation.ADD_VALUE
+            );
+            addAttribute(
+                    context,
+                    Items.GOLDEN_LEGGINGS,
+                    AttributeModifierSlot.LEGS,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_leggings"),
+                    0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.GOLDEN_BOOTS,
+                    AttributeModifierSlot.FEET,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_boots"),
+                    0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+
+            addAttribute(
+                    context,
+                    Items.IRON_HELMET,
+                    AttributeModifierSlot.HEAD,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_helmet"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.IRON_CHESTPLATE,
+                    AttributeModifierSlot.CHEST,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_chestplate"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.IRON_LEGGINGS,
+                    AttributeModifierSlot.LEGS,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_leggings"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.IRON_BOOTS,
+                    AttributeModifierSlot.FEET,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_boots"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+
+            addAttribute(
+                    context,
+                    Items.COPPER_HELMET,
+                    AttributeModifierSlot.HEAD,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_helmet"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.COPPER_CHESTPLATE,
+                    AttributeModifierSlot.CHEST,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_chestplate"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.COPPER_LEGGINGS,
+                    AttributeModifierSlot.LEGS,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_leggings"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+            addAttribute(
+                    context,
+                    Items.COPPER_BOOTS,
+                    AttributeModifierSlot.FEET,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "armor_movement_speed_boots"),
+                    -0.0125,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
+
+            addAttribute(
+                    context,
+                    Items.TURTLE_HELMET,
+                    AttributeModifierSlot.HEAD,
+                    EntityAttributes.MOVEMENT_SPEED,
+                    Identifier.of(MOD_ID, "elytra_movement_speed_helmet"),
+                    0.05,
+                    EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
+            );
             addAttribute(
                     context,
                     Items.ELYTRA,
                     AttributeModifierSlot.CHEST,
                     EntityAttributes.MOVEMENT_SPEED,
-                    "elytra_movement_speed_chest",
+                    Identifier.of(MOD_ID, "elytra_movement_speed_chest"),
                     0.05,
                     EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE
             );
+
+
 
             context.modify(Items.GOLDEN_SWORD, builder ->
                     builder.add(
@@ -123,7 +290,7 @@ public class AttributeModifier {
             Item item,
             AttributeModifierSlot slot,
             RegistryEntry<EntityAttribute> attribute,
-            String modifierId,
+            Identifier modifierId,
             double value,
             EntityAttributeModifier.Operation operation
     ) {
@@ -138,10 +305,7 @@ public class AttributeModifier {
             AttributeModifiersComponent modified = existing.with(
                     attribute,
                     new EntityAttributeModifier(
-                            Identifier.of(
-                                    MOD_ID,
-                                    modifierId
-                            ),
+                            modifierId,
                             value,
                             operation
                     ),
