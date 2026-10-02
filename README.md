@@ -10,6 +10,11 @@ This mod is a reimagining of one of my previous mods, tweaking Minecraft equipme
 
 "The game's "implied" progression system?" I hear you ask- oh, you didn't? Well, this is my mod, so let me explain anyway:
 
+---
+<br>
+
+![explaination section](./extra_stuff/explaination.png)
+
 Progression has been reorganized in the order equipment should be obtained, with tools mostly being unchanged:
 Copper armor is upgraded from leather (without a template), chainmail is now craftable and can be upgraded with either gold or iron, with iron giving you more protection while sacrificing your speed, and gold being the opposite; making you 5% faster with a whole set, at the cost of the same protection as the chainmail armor. Diamond is upgraded from iron armor, giving you more protection at the cost being even slower, and netherite is upgraded from gold armor, netherite ingots now using gold armor, being even heavier than diamond armor despite it's lighter base, though it is still the strongest armor in the game.
 
@@ -19,10 +24,12 @@ To still make netherite a viable choice when compared to gold or even just diamo
 
 This mod also replaces the Netherite Upgrade Template with the new Plate Forger, which can be found just about anywhere you'd expect to find one of the old templates, and a few other places as well. Since Netherite Upgrade Templates do still exist in the game, you can exchange them for 7 diamonds if you put them in any crafting grid.
 
+*All of this just because I wanted an excuse to bring the mod back, and make gold actually useful outside of Golden Apples.*
+
 ----
 
-![plate forger recipe](./recipe_samples/plate_forger_recipe.png)
-![diamond ingot recipe](./recipe_samples/diamond_ingot_recipe.png)
+![plate forger recipe](./extra_stuff/plate_forger_recipe.png)
+![diamond ingot recipe](./extra_stuff/diamond_ingot_recipe.png)
 
 ----
 
