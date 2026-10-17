@@ -1,10 +1,10 @@
-![mod title](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/mod_name.png)
+![Mod Title Graphic](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/mod_name.png)
 
 ----
 
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/8eGmq0Rj?style=flat-square&logo=modrinth&logoColor=1bd96a&label=Modrinth&labelColor=16181c&color=1bd96a)](https://modrinth.com/mod/8eGmq0Rj)
 
-[![modrinth-gallery](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/modrinth-gallery_64h.png)](https://modrinth.com/mod/tooltouchups-rewaxed/gallery) [![kofi-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/kofi-singular_64h.png)](https://ko-fi.com/kckarnige) [![buymeacoffee-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/buymeacoffee-singular_64h.png)](https://www.buymeacoffee.com/kckarnige)
+[![Modrinth Gallery](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/documentation/modrinth-gallery_64h.png)](https://modrinth.com/mod/tooltouchups-rewaxed/gallery) [![kofi-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/kofi-singular_64h.png)](https://ko-fi.com/kckarnige) [![buymeacoffee-singular](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/buymeacoffee-singular_64h.png)](https://www.buymeacoffee.com/kckarnige)
 
 This mod is a reimagining of one of my previous mods, tweaking Minecraft equipment progression for casual players to make sense within the game's implied progression system, by adding diamond ingots, the new way to craft diamond equipment, and tweaking properties of different armors and weapons.
 
@@ -13,7 +13,7 @@ This mod is a reimagining of one of my previous mods, tweaking Minecraft equipme
 ---
 <br>
 
-![explaination section](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/extra_stuff/explaination.png)
+![Explaination Section Graphic](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/extra_stuff/explaination.png)
 
 Progression has been reorganized in the order equipment should be obtained, with tools mostly being unchanged:
 Copper armor is upgraded from leather (without a template), chainmail is now craftable and can be upgraded with either gold or iron, with iron giving you more protection while sacrificing your speed, and gold being the opposite; making you 5% faster with a whole set, at the cost of the same protection as the chainmail armor. Diamond is upgraded from iron armor, giving you more protection at the cost being even slower, and netherite is upgraded from gold armor, netherite ingots now using gold armor, being even heavier than diamond armor despite it's lighter base, though it is still the strongest armor in the game.
@@ -28,8 +28,8 @@ This mod also replaces the Netherite Upgrade Template with the new Plate Forger,
 
 ----
 
-![plate forger recipe](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/extra_stuff/plate_forger_recipe.png)
-![diamond ingot recipe](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/extra_stuff/diamond_ingot_recipe.png)
+![Plate Forger Recipe](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/extra_stuff/plate_forger_recipe.png)
+![Diamond Ingot Recipe](https://raw.githubusercontent.com/kckarnige/ToolTouchupsReWaxed/refs/heads/1.21.11/extra_stuff/diamond_ingot_recipe.png)
 
 ----
 
